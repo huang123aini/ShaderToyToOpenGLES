@@ -22,10 +22,18 @@
 		FFAB2CFD1F02877B006ABFBB /* waterShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FFAB2CFA1F02877B006ABFBB /* waterShader.fsh */; };
 		FFAB2CFE1F02877B006ABFBB /* waterShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FFAB2CFB1F02877B006ABFBB /* waterShader.vsh */; };
 		FFAB2D011F028867006ABFBB /* WaterWaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAB2D001F028867006ABFBB /* WaterWaveModel.m */; };
-		FFAB2D051F028D70006ABFBB /* flameShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FFAB2D031F028D70006ABFBB /* flameShader.fsh */; };
-		FFAB2D061F028D70006ABFBB /* flameShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FFAB2D041F028D70006ABFBB /* flameShader.vsh */; };
-		FFAB2D0C1F028F83006ABFBB /* FlameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAB2D0B1F028F83006ABFBB /* FlameModel.m */; };
-		FFAB2D0F1F029064006ABFBB /* FlameVc.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAB2D0E1F029064006ABFBB /* FlameVc.m */; };
+		FFE188E626E3BC39003E1063 /* ShadowEffectVc.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE188E526E3BC39003E1063 /* ShadowEffectVc.m */; };
+		FFE188E926E3BCF4003E1063 /* ShadowEffectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE188E826E3BCF4003E1063 /* ShadowEffectModel.m */; };
+		FFE188EB26E3BD5B003E1063 /* shadowShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FFE188EA26E3BD5B003E1063 /* shadowShader.vsh */; };
+		FFE188ED26E3BD93003E1063 /* shadowShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FFE188EC26E3BD93003E1063 /* shadowShader.fsh */; };
+		FFE188F026E489EB003E1063 /* LightEffectVc.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE188EF26E489EB003E1063 /* LightEffectVc.m */; };
+		FFE188F326E48A25003E1063 /* LightEffectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE188F226E48A25003E1063 /* LightEffectModel.m */; };
+		FFE188F726E48A89003E1063 /* lightShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FFE188F626E48A89003E1063 /* lightShader.vsh */; };
+		FFE188F926E48A9F003E1063 /* lightShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FFE188F826E48A9F003E1063 /* lightShader.fsh */; };
+		FFE188FE26E49D7E003E1063 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFE188FA26E49D7E003E1063 /* 2.jpg */; };
+		FFE188FF26E49D7E003E1063 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFE188FB26E49D7E003E1063 /* 3.jpg */; };
+		FFE1890026E49D7E003E1063 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFE188FC26E49D7E003E1063 /* 1.jpg */; };
+		FFE1890126E49D7E003E1063 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFE188FD26E49D7E003E1063 /* 4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,12 +60,22 @@
 		FFAB2CFB1F02877B006ABFBB /* waterShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = waterShader.vsh; sourceTree = "<group>"; };
 		FFAB2CFF1F028867006ABFBB /* WaterWaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterWaveModel.h; sourceTree = "<group>"; };
 		FFAB2D001F028867006ABFBB /* WaterWaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterWaveModel.m; sourceTree = "<group>"; };
-		FFAB2D031F028D70006ABFBB /* flameShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = flameShader.fsh; sourceTree = "<group>"; };
-		FFAB2D041F028D70006ABFBB /* flameShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = flameShader.vsh; sourceTree = "<group>"; };
-		FFAB2D0A1F028F83006ABFBB /* FlameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlameModel.h; sourceTree = "<group>"; };
-		FFAB2D0B1F028F83006ABFBB /* FlameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlameModel.m; sourceTree = "<group>"; };
-		FFAB2D0D1F029064006ABFBB /* FlameVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlameVc.h; sourceTree = "<group>"; };
-		FFAB2D0E1F029064006ABFBB /* FlameVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlameVc.m; sourceTree = "<group>"; };
+		FFE188E426E3BC39003E1063 /* ShadowEffectVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowEffectVc.h; sourceTree = "<group>"; };
+		FFE188E526E3BC39003E1063 /* ShadowEffectVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowEffectVc.m; sourceTree = "<group>"; };
+		FFE188E726E3BCF4003E1063 /* ShadowEffectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowEffectModel.h; sourceTree = "<group>"; };
+		FFE188E826E3BCF4003E1063 /* ShadowEffectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowEffectModel.m; sourceTree = "<group>"; };
+		FFE188EA26E3BD5B003E1063 /* shadowShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shadowShader.vsh; sourceTree = "<group>"; };
+		FFE188EC26E3BD93003E1063 /* shadowShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shadowShader.fsh; sourceTree = "<group>"; };
+		FFE188EE26E489EB003E1063 /* LightEffectVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightEffectVc.h; sourceTree = "<group>"; };
+		FFE188EF26E489EB003E1063 /* LightEffectVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightEffectVc.m; sourceTree = "<group>"; };
+		FFE188F126E48A25003E1063 /* LightEffectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightEffectModel.h; sourceTree = "<group>"; };
+		FFE188F226E48A25003E1063 /* LightEffectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightEffectModel.m; sourceTree = "<group>"; };
+		FFE188F626E48A89003E1063 /* lightShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lightShader.vsh; sourceTree = "<group>"; };
+		FFE188F826E48A9F003E1063 /* lightShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lightShader.fsh; sourceTree = "<group>"; };
+		FFE188FA26E49D7E003E1063 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		FFE188FB26E49D7E003E1063 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		FFE188FC26E49D7E003E1063 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		FFE188FD26E49D7E003E1063 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,11 +111,17 @@
 		FFAB2CBF1F0271D6006ABFBB /* OpenGLESShader */ = {
 			isa = PBXGroup;
 			children = (
+				FFE188FC26E49D7E003E1063 /* 1.jpg */,
+				FFE188FA26E49D7E003E1063 /* 2.jpg */,
+				FFE188FB26E49D7E003E1063 /* 3.jpg */,
+				FFE188FD26E49D7E003E1063 /* 4.jpg */,
 				FFAB2CF91F02877B006ABFBB /* timg.jpg */,
 				FFAB2CFB1F02877B006ABFBB /* waterShader.vsh */,
 				FFAB2CFA1F02877B006ABFBB /* waterShader.fsh */,
-				FFAB2D041F028D70006ABFBB /* flameShader.vsh */,
-				FFAB2D031F028D70006ABFBB /* flameShader.fsh */,
+				FFE188EA26E3BD5B003E1063 /* shadowShader.vsh */,
+				FFE188EC26E3BD93003E1063 /* shadowShader.fsh */,
+				FFE188F626E48A89003E1063 /* lightShader.vsh */,
+				FFE188F826E48A9F003E1063 /* lightShader.fsh */,
 				FFAB2CEC1F027655006ABFBB /* model */,
 				FFAB2CE21F0273F8006ABFBB /* Vc */,
 				FFAB2CC31F0271D6006ABFBB /* AppDelegate.h */,
@@ -139,8 +163,10 @@
 			children = (
 				FFAB2CE31F02743F006ABFBB /* WaterWaveEffectVc.h */,
 				FFAB2CE41F02743F006ABFBB /* WaterWaveEffectVc.m */,
-				FFAB2D0D1F029064006ABFBB /* FlameVc.h */,
-				FFAB2D0E1F029064006ABFBB /* FlameVc.m */,
+				FFE188E426E3BC39003E1063 /* ShadowEffectVc.h */,
+				FFE188E526E3BC39003E1063 /* ShadowEffectVc.m */,
+				FFE188EE26E489EB003E1063 /* LightEffectVc.h */,
+				FFE188EF26E489EB003E1063 /* LightEffectVc.m */,
 			);
 			name = Vc;
 			sourceTree = "<group>";
@@ -150,8 +176,10 @@
 			children = (
 				FFAB2CFF1F028867006ABFBB /* WaterWaveModel.h */,
 				FFAB2D001F028867006ABFBB /* WaterWaveModel.m */,
-				FFAB2D0A1F028F83006ABFBB /* FlameModel.h */,
-				FFAB2D0B1F028F83006ABFBB /* FlameModel.m */,
+				FFE188E726E3BCF4003E1063 /* ShadowEffectModel.h */,
+				FFE188E826E3BCF4003E1063 /* ShadowEffectModel.m */,
+				FFE188F126E48A25003E1063 /* LightEffectModel.h */,
+				FFE188F226E48A25003E1063 /* LightEffectModel.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -197,6 +225,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -215,14 +244,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFE188FE26E49D7E003E1063 /* 2.jpg in Resources */,
+				FFE1890026E49D7E003E1063 /* 1.jpg in Resources */,
 				FFAB2CFE1F02877B006ABFBB /* waterShader.vsh in Resources */,
 				FFAB2CFC1F02877B006ABFBB /* timg.jpg in Resources */,
-				FFAB2D061F028D70006ABFBB /* flameShader.vsh in Resources */,
+				FFE188FF26E49D7E003E1063 /* 3.jpg in Resources */,
 				FFAB2CFD1F02877B006ABFBB /* waterShader.fsh in Resources */,
 				FFAB2CD01F0271D6006ABFBB /* LaunchScreen.storyboard in Resources */,
+				FFE188F726E48A89003E1063 /* lightShader.vsh in Resources */,
+				FFE1890126E49D7E003E1063 /* 4.jpg in Resources */,
+				FFE188ED26E3BD93003E1063 /* shadowShader.fsh in Resources */,
+				FFE188EB26E3BD5B003E1063 /* shadowShader.vsh in Resources */,
 				FFAB2CCD1F0271D6006ABFBB /* Assets.xcassets in Resources */,
-				FFAB2D051F028D70006ABFBB /* flameShader.fsh in Resources */,
 				FFAB2CCB1F0271D6006ABFBB /* Main.storyboard in Resources */,
+				FFE188F926E48A9F003E1063 /* lightShader.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,14 +269,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFAB2CE51F02743F006ABFBB /* WaterWaveEffectVc.m in Sources */,
-				FFAB2D0F1F029064006ABFBB /* FlameVc.m in Sources */,
+				FFE188E926E3BCF4003E1063 /* ShadowEffectModel.m in Sources */,
+				FFE188F026E489EB003E1063 /* LightEffectVc.m in Sources */,
 				FFAB2CC81F0271D6006ABFBB /* ViewController.m in Sources */,
 				FFAB2D011F028867006ABFBB /* WaterWaveModel.m in Sources */,
 				FFAB2CE11F02737B006ABFBB /* HDemosVc.m in Sources */,
+				FFE188F326E48A25003E1063 /* LightEffectModel.m in Sources */,
 				FFAB2CC51F0271D6006ABFBB /* AppDelegate.m in Sources */,
-				FFAB2D0C1F028F83006ABFBB /* FlameModel.m in Sources */,
 				FFAB2CE81F0274B9006ABFBB /* HGLUtils.m in Sources */,
 				FFAB2CC21F0271D6006ABFBB /* main.m in Sources */,
+				FFE188E626E3BC39003E1063 /* ShadowEffectVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +439,7 @@
 				FFAB2CD61F0271D6006ABFBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

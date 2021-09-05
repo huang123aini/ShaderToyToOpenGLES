@@ -8,7 +8,8 @@
 
 #import "HDemosVc.h"
 #import "WaterWaveEffectVc.h"
-#import "FlameVc.h"
+#import "ShadowEffectVc.h"
+#import "LightEffectVc.h"
 
 
 @interface HDemosVc ()
@@ -25,9 +26,11 @@
     demoArrays = [NSMutableArray new];
     
     NSString* demo1 = @"水波纹效果";
-    NSString* demo2 = @"火焰效果";
+    NSString* demo2 = @"阴影效果";
+    NSString* demo3 = @"光照效果";
     [demoArrays addObject:demo1];
     [demoArrays addObject:demo2];
+    [demoArrays addObject:demo3];
     
 }
 
@@ -75,12 +78,12 @@
         }
         case 1:
         {
-            viewC = [FlameVc new];
+            viewC = [ShadowEffectVc new];
             break;
         }
         case 2:
         {
-            
+            viewC = [LightEffectVc new];
             break;
         }
             

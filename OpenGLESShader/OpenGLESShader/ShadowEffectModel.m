@@ -1,35 +1,24 @@
 //
-//  WaterWaveModel.m
+//  ShadowEffectModel.m
 //  OpenGLESShader
 //
-//  Created by huangshiping on 2017/6/27.
-//  Copyright © 2017年 huangshiping. All rights reserved.
+//  Created by 黄世平 on 2021/9/4.
+//  Copyright © 2021 huangshiping. All rights reserved.
 //
 
-#import "WaterWaveModel.h"
-#import <GLKit/GLKit.h>
+#import "ShadowEffectModel.h"
 #import "HGLUtils.h"
 
-
-@interface WaterWaveModel()
+@implementation ShadowEffectModel
 {
     GLuint          _program;
     GLuint          _vbo;
     GLuint          _texture;
     int             _vertCount;
-    
-    UIImage*        _image;
 }
 
-@end
-
-@implementation WaterWaveModel
-
--(instancetype)initWithImage:(UIImage*)image
-{
-    if (self = [super init])
-    {
-        _image = image;
+-(instancetype)init {
+    if (self = [super init]) {
         [self setupGL];
     }
     return self;
@@ -38,13 +27,7 @@
 -(void)setupGL
 {
     
-    //1.
-    _texture = [HGLUtils createTextureWithImage:_image];
-    //2.
-    _program = [HGLUtils compileShaders:H_WaterWave_VERTEX shaderFragment:H_WaterWave_FRAGMENT];
-    
-    
-    //3.
+    _program = [HGLUtils compileShaders:H_Shadow_VERTEX shaderFragment:H_Shadow_FRAGMENT];
     GLfloat vertices[] = {
         -1.f, -1.f, 0.0f,  0.0f, 1.0f,  // 左下
         1.f, -1.f, 0.0f,   1.0f, 1.0f,  // 右下
@@ -54,17 +37,14 @@
     };
     
     glUseProgram(_program);
-    
     glGenBuffers(1, &_vbo);
     glBindBuffer(GL_ARRAY_BUFFER, _vbo);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
     
 }
 
--(void)draw
-{
+-(void)draw {
     static float globalTime = 0.0f;
-    
     glUseProgram(_program);
     
     glEnableVertexAttribArray(glGetAttribLocation(_program, "aPosition"));
@@ -72,13 +52,7 @@
     
     glEnableVertexAttribArray(glGetAttribLocation(_program, "aTexCoord"));
     glVertexAttribPointer(glGetAttribLocation(_program, "aTexCoord"), 2, GL_FLOAT, GL_FALSE, sizeof(GLfloat)*5, NULL+sizeof(GL_FLOAT)*3);
-    
-    
-    // 激活纹理
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, _texture);
-    glUniform1i(glGetUniformLocation(_program, "uSampler"), 0);
-    
+        
     globalTime += 0.03f;
     glUniform1f(glGetUniformLocation(_program,"uTime"), globalTime);
     
@@ -93,4 +67,5 @@
     glDeleteProgram(_program);
     
 }
+
 @end
